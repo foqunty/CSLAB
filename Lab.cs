@@ -1,4 +1,5 @@
-﻿Console.Write("What is your name? :");
+﻿/*
+Console.Write("What is your name? :");
 string name = Console.ReadLine()!;
 Console.Write("Which city are you from? : ");
 string city = Console.ReadLine()!;
@@ -70,6 +71,59 @@ if(dig1 == dig3){
 else{
     Console.WriteLine("First and last digits are different");
 } 
+*/
+int score = 0;
+while (true)
+{
+   Console.Write("Score: ");
+   score = int.Parse(Console.ReadLine()!);
+   Console.Write($"Score: {score} ");
+    if (score == 0)
+    {
+        break;
+    }
+   if(score<0 || score > 100)
+    {
+        Console.Write("Invalid Score\n");
+    }
+    else if (score>=90)
+    {
+        Console.WriteLine("A");
+    }
+    else if (score>=80)
+    {
+        Console.WriteLine("B");
+    }
+    else if (score>=70)
+    {
+        Console.WriteLine("C");
+    }
+    else if (score >= 60)
+    {
+        Console.WriteLine("D");
+    }
+    else
+    {
+        Console.WriteLine("F");
+    }
+    
+}
+Console.WriteLine("\n");
+int num = 1;
+int sum = 0;
+int count = -1;
+
+while (num != 0)
+{
+    Console.Write("Number (0 to stop) : ");
+    num = int.Parse(Console.ReadLine());
+    sum += num;
+    count++;
+}
+
+double avg = sum  / count;
+Console.WriteLine($"Count : {count}, Sum : {sum}, Average : {avg:f2}");
+ 
 
 
 
