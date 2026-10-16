@@ -116,7 +116,7 @@ int count = -1;
 while (num != 0)
 {
     Console.Write("Number (0 to stop) : ");
-    num = int.Parse(Console.ReadLine());
+    num = int.Parse(Console.ReadLine()!);
     sum += num;
     count++;
 }
